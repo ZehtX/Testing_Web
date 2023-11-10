@@ -1,13 +1,14 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
+    color: white;
 }
 h1{
+    color: goldenrod;
+}
+h2{
     color: gold;
 }
-p{
-    color: white;
-}
-li{
-    color: white;
+h3{
+    color: yellow;
 }
