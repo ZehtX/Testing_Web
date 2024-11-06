@@ -62,8 +62,23 @@
     <h2>Prueba XSS</h2>
     <form method="get">
         <label>Intenta atacar</label>
-        <input type="text" placeholder="Intentalo" name="testXSS">
+        <input type="text" placeholder="Intentalo" name="testXSS" id="miInput">
+        <button onclick="imprimirComoParrafo()">Imprimir</button>
     </form>
     <br><br>
+    <script>
+        function imprimirComoParrafo() {
+            // Obtener el valor del input
+            const valorInput = document.getElementById('miInput').value;
+
+            // Crear un nuevo elemento <p>
+            const nuevoParrafo = document.createElement('p');
+            nuevoParrafo.textContent = valorInput; // Establecer el contenido del párrafo
+
+            // Agregar el párrafo al contenedor
+            document.getElementById('contenedor').appendChild(nuevoParrafo);
+        }
+    </script>
+    
 </body>
 </html>  
