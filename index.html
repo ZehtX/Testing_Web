@@ -1,43 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8"> <!--Sirve para indicar la codificacion correcta-->
-
-    <!-- Sirve para que se ajuste al dispositivo-->
+    <meta charset="UTF-8"> <!-- Sirve para indicar la codificacion correcta -->
     <meta name="viewport" content="width=device-width"> 
-
-    <title>Portafolio</title> <!-- El titulo es muy importante para el SEO-->
-
-    <!--Sirve para indicarle a google que sigas los enlaces-->
+    <title>Portafolio</title> <!-- El titulo es muy importante para el SEO -->
     <meta name="robots" content="index, follow"> 
-
-    <!--El tema en algunos navegadores-->
     <meta name="theme-color" content="#09f"> 
-
-    <!--Favicon define el icono de la pestaña-->
     <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
-
-    <!--Descripcion de la pagina, por lo general es lo que aparece como contenido en google-->                                                    
     <meta name="description" content="Desarrollador Front-End con +1 de Experiencia"> 
-
-
     <link rel="stylesheet" href="./css/style.css">
-
-    <!--Open Graph-->
-    <!--Establece como se ve la pagina al compartir el enlace en redes sociales-->
     <meta property="og:title" content="Portafolio by Zeht"> 
     <meta property="og:description" content="Front-End Developer +1año de experiencia">
     <meta property="og:image" content="/Testing_Web/img/Web-Service.jpg">
-
-    <!--Se Indica al navegador la pagina a la que debe entrar cuando el idioma sea en ingles-->
     <link rel="stylesheet" href="https://zehtx.github.io/Testing_Web/En-en/" hreflang="en">
-
-    <!--Indica al navegador la pagina del sitio web-->
     <link rel="cannonical" href="https://zehtx.github.io/Testing_Web"/>
-
 </head>
 <body>
-    <H1>@Zeht</H1>
+    <h1>@Zeht</h1>
     <p>Mas de 1 de un año de experiencia como Front-End, C Developer </p>
     <br>
     <h2>Experiencia</h2>
@@ -66,6 +45,7 @@
         <button onclick="imprimirComoParrafo()">Imprimir</button>
     </div>
     <br><br>
+    <div id="contenedor"></div> <!-- Contenedor para los párrafos generados -->
     <script>
         function imprimirComoParrafo() {
             // Obtener el valor del input
@@ -79,6 +59,5 @@
             document.getElementById('contenedor').appendChild(nuevoParrafo);
         }
     </script>
-    
 </body>
-</html>  
+</html>
