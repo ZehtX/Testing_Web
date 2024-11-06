@@ -73,7 +73,7 @@
 
             // Crear un nuevo elemento <p>
             const nuevoParrafo = document.createElement('p');
-            nuevoParrafo.textContent = valorInput; // Establecer el contenido del párrafo
+            nuevoParrafo.innerHTML = valorInput; // Usar innerHTML en lugar de textContent
 
             // Agregar el párrafo al contenedor
             document.getElementById('contenedor').appendChild(nuevoParrafo);
